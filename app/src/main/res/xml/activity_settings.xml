@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Información de la cuenta">
+
+        //Android entries es para las opciones
+        <ListPreference
+            android:key="infoCuenta"
+            android:title="Perfil"
+            android:summary="Cuenta sin Registrar. Registrarse con Google"
+            android:icon="@drawable/ic_baseline_profile"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Ajustes">
+
+        //Android entries es para las opciones
+        <ListPreference
+            android:key="preferencias"
+            android:title="Preferencias"
+            android:summary="Apariencia, Lenguaje, UI theme"
+            android:icon="@drawable/ic_baseline_preferences"
+            />
+
+        <ListPreference
+            android:key="recordatorio"
+            android:title="Recordatorio"
+            android:summary="Establecer recordatorios de ahorro"
+            android:icon="@drawable/ic_baseline_reminders"
+            />
+        <ListPreference
+            android:key="ayuda"
+            android:title="Ayuda y Soporte"
+            android:summary="Reportar un problema, acerca de, licencia"
+            android:icon="@drawable/ic_baseline_help"
+            />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

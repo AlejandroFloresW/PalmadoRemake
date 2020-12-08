@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="#e2f0fb"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- A CardView that contains a TextView -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nameColor"
+        android:textColor="#FFFFFF"
+        android:onClick="act"
+        android:text="Visualizar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPokemon"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="20dp"
+        android:elevation="200dp"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ImgPokemon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/colorImgBtn"
+                android:contentDescription="TODO"
+                android:scaleType="centerInside"/>
+          
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nombrePokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:autoSizeMinTextSize="15dp"
+                    android:autoSizeMaxTextSize="24dp"
+                    android:background="@color/LineColor"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageButton
+                    android:id="@+id/imgFav"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:contentDescription="TODO"
+                    android:onClick="changeIcon"
+                    android:scaleType="centerInside"/>
+                <!--
+                <Switch
+                    android:id="@+id/switchHearth"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0"
+                    android:text="Switch" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

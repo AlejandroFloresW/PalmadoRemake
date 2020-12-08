@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PokemonInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardPokemonFragment"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ImgPokemonFragment"
+                android:layout_width="375dp"
+                android:layout_height="175dp"
+                android:layout_weight="2"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/pokeball"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/nombrePokemonFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="Pokebolla"/>
+
+                <TextView
+                    android:id="@+id/idPokemonFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingStart="150dp"
+                    android:text="#1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/descPokemonFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:autoSizeMinTextSize="1dp"
+                    android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."/>
+                />
+
+                <Button
+                    android:id="@+id/cerrarFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_weight="10"
+                    android:paddingBottom="2dp"
+                    android:text="Cerrar"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

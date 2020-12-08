@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Palmado</string>
+    <string name="snack">Este pokemon se ha añadido a tus favoritos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_desc">Logo Palmado</string>
+    <string name="titulo_bienvenida">Bienvenido a Palmado</string>
+    <string name="bienvenida_desc">¿Se te hace difícil mantener un control de tu dinero? ¡No te preocupes! ¡Cordobita te ayudará!</string>
+    <string name="genial_verdad">¿Listo para manejar mejor tus gastos?</string>
+    <string name="start">¡Empecemos a ahorrar!</string>
+    <string name="gridwiew">Cambiar Vista</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="title_activity_admin_gasto_ativity">AdminGastoAtivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="gestionarA">Gestionar Actividad</string>
+    <string name="category">Entretenimiento</string>
+    <string name="Entrenimiento">Entretenimiento</string>
+    <string name="desc">Gastos enfocados a la recreación</string>
+    <string name="NuevoGasto">Nuevo Gasto</string>
+    <string name="GName">Nombre del gasto</string>
+    <string name="cant">Cantidad</string>
+    <string name="Ex1">Salida</string>
+    <string name="Ex2">Compras</string>
+    <string name="Total">Gasto Total:</string>
+    <string name="TotalCant">300 C$</string>
+</resources>

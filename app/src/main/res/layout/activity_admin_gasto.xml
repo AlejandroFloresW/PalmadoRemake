@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2f0fb"
+    tools:context=".admin_gasto">
+
+
+    <EditText
+        android:id="@+id/EtDescp"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="307dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:background="#e2f0fb"
+        android:hint="@string/desc"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EtCategory"
+        android:gravity="start" />
+
+    <CheckedTextView
+        android:id="@+id/ctvNameRef2"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="151dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/border"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:text="1,500 C$"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EtCantG"
+
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnColorpicker"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorBlue"
+        app:layout_constraintBottom_toTopOf="@id/EtDescp"
+        app:layout_constraintLeft_toRightOf="@id/EtCategory" />
+
+    <TextView
+        android:id="@+id/CantRef"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="156dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/Ex1"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ctvNameRef"
+        app:layout_constraintTop_toBottomOf="@id/EtCantG" />
+
+    <EditText
+        android:id="@+id/line"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="356dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/LineColor"
+        android:textAlignment="textStart"
+        android:tooltipText="@string/category"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EtDescp"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="4dp"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Total2"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="368dp"
+        android:text="@string/Total"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+    <EditText
+        android:id="@+id/EtNameG"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="315dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border2"
+        android:hint="@string/GName"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_NewExp"
+        android:gravity="start" />
+
+    <TextView
+        android:id="@+id/tv_Total"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="368dp"
+        android:text="@string/TotalCant"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+    <CheckedTextView
+        android:id="@+id/ctvNameRef"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="true"
+        android:text="300 C$"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EtCantG"
+
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/EtCantG"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="153dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border2"
+        android:hint="@string/cant"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EtNameG"
+        android:gravity="start" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Agregar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toRightOf="@id/EtCantG"
+        app:layout_constraintTop_toBottomOf="@id/EtNameG" />
+
+    <TextView
+        android:id="@+id/cantRef2"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="135dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/Ex2"
+        android:textAlignment="viewStart"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ctvNameRef"
+        app:layout_constraintTop_toBottomOf="@id/EtCantG"
+        android:gravity="start" />
+
+    <EditText
+        android:id="@+id/EtCategory"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="229dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="32dp"
+        android:background="#e2f0fb"
+        android:hint="@string/Entrenimiento"
+        android:textAlignment="textStart"
+        android:tooltipText="@string/category"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_admingasto"
+        android:gravity="start" />
+
+    <TextView
+        android:id="@+id/tv_admingasto"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/gestionarA"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_NewExp"
+        style="@style/AppTheme.Base.Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/NuevoGasto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
